@@ -57,9 +57,9 @@ def payload_cm_passing(index, data, error_type):
     #  Payload for Concomitant Medications
     payload_cm = {
         "email_address": "raravindmadhavan@gmail.com",
-        "formname": str(data.loc[index, 'formname_x']),
-        "formid": int(data.loc[index, 'formid_x']),
-        "formidx": int(data.loc[index, 'formidx_x']),
+        "formname": str(data.loc[index, 'formname_y']),
+        "formid": int(data.loc[index, 'formid_y']),
+        "formidx": int(data.loc[index, 'formidx_y']),
         "type": str(error_type),
         "subjectid": str(data.loc[index, 'subjectid'])}
     post_query(payload_cm)
